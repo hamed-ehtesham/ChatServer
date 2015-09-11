@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anpn" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="anchorPane" stylesheets="@signup.css" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.chat.view.signup.SignUpController">
+   <children>
+      <GridPane fx:id="gridPane" hgap="10.0" layoutX="15.0" layoutY="209.0" vgap="20.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="134.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="238.0" minWidth="10.0" prefWidth="239.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints prefHeight="35.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Email Address" />
+            <TextField fx:id="emailAddress" onKeyReleased="#validateEmail" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Label layoutX="27.0" layoutY="50.0" text="Welcome to Telepaty " textFill="#47b7c6" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0">
+         <font>
+            <Font name="Calibri Light" size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="movePane" prefHeight="53.0" prefWidth="400.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="352.0" layoutY="12.0" styleClass="TitleButtons">
+               <children>
+                  <Button id="closeButton" fx:id="closeButton" cancelButton="true" maxHeight="30.0" maxWidth="34.0" minHeight="30.0" minWidth="34.0" mnemonicParsing="false" onAction="#CloseButton_Clicked" prefHeight="30.0" prefWidth="34.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <GridPane hgap="10.0" layoutX="14.0" layoutY="159.0" vgap="20.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="5.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="134.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="55.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="176.0" minWidth="10.0" prefWidth="171.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="26.0" prefWidth="151.0" text="Phone Number" />
+            <TextField fx:id="phoneNumber" onKeyReleased="#validatePhoneNumber" GridPane.columnIndex="2" />
+            <TextField prefHeight="36.0" prefWidth="57.0" text="+98" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button defaultButton="true" layoutX="40.0" layoutY="310.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="302.0" text="Register" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" />
+   </children>
+</AnchorPane>
