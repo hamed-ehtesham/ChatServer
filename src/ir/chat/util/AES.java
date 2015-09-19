@@ -1,6 +1,6 @@
 package ir.chat.util;
 
-import lib.org.apache.commons.codec.binary.Base64;
+import org.apache.commons.codec.binary.Base64;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
