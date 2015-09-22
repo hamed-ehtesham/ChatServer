@@ -1,5 +1,6 @@
 package ir.chat;
 
+import ir.chat.util.RSAEncrypt;
 import ir.chat.util.Undecorator;
 import ir.chat.view.ClientController;
 import ir.chat.view.signup.SignUpController;
@@ -15,8 +16,12 @@ public class Main extends Application {
     Stage primaryStage;
 
     @Override
-    public void start(Stage primaryStage) throws Exception{
-        this.primaryStage = primaryStage;
+    public void start(Stage primaryStage) throws Exception {
+
+
+
+
+       /* this.primaryStage = primaryStage;
         FXMLLoader loader = new FXMLLoader();
         loader.setLocation(getClass().getResource("view/signup/signup.fxml"));
         Parent root = loader.load();
@@ -28,7 +33,8 @@ public class Main extends Application {
         SignUpController controller = loader.getController();
         primaryStage.sizeToScene();
         Undecorator undecorator = Undecorator.UndecoratorFactory(primaryStage, 4, controller.getMovePane(), false);
-        primaryStage.show();
+        primaryStage.show();*/
+
 
 //        this.primaryStage = primaryStage;
 //        FXMLLoader loader = new FXMLLoader();
@@ -51,7 +57,9 @@ public class Main extends Application {
         return primaryStage;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+
+        System.out.println(RSAEncrypt.getPrivateKey());
         launch(args);
     }
 }
