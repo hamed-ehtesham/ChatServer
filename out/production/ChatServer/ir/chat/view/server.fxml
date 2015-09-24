@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anpn" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1287.0" styleClass="anchorPane" stylesheets="@server.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ir.chat.view.ServerController">
+   <children>
+      <AnchorPane fx:id="movePane" prefHeight="85.0" prefWidth="1287.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane layoutX="1239.0" layoutY="12.0" styleClass="TitleButtons">
+               <children>
+                  <Button id="closeButton" fx:id="closeButton" cancelButton="true" maxHeight="30.0" maxWidth="34.0" minHeight="30.0" minWidth="34.0" mnemonicParsing="false" onAction="#CloseButton_Clicked" prefHeight="30.0" prefWidth="34.0" />
+               </children>
+            </Pane>
+            <Label layoutY="-6.0" prefHeight="41.0" prefWidth="324.0" text="Telepaty Server" textFill="#042428" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="963.0">
+               <font>
+                  <Font name="Calibri Light" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="570.0" layoutY="36.0" prefHeight="85.0" prefWidth="162.0" text="Server" textFill="#2c487c" AnchorPane.leftAnchor="570.0" AnchorPane.rightAnchor="555.0">
+         <font>
+            <Font name="Segoe UI Light" size="58.0" />
+         </font>
+      </Label>
+      <GridPane hgap="27.0" layoutX="76.0" layoutY="172.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="64.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="149.0" text="Login" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="147.0" text="Registery" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="149.0" text="Message" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="loginPort" GridPane.columnIndex="1" />
+            <TextField fx:id="registeryPort" GridPane.columnIndex="3" />
+            <TextField fx:id="messagePort" GridPane.columnIndex="5" />
+         </children>
+      </GridPane>
+      <Label layoutX="35.0" layoutY="170.0" text="Ports : ">
+         <font>
+            <Font name="Segoe UI Light" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="241.0" text="Database :">
+         <font>
+            <Font name="Segoe UI Light" size="24.0" />
+         </font>
+      </Label>
+      <GridPane hgap="27.0" layoutX="200.0" layoutY="244.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="64.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="149.0" text="Username" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="147.0" text="Password" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="149.0" text="DB Name" GridPane.columnIndex="4">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameDB" GridPane.columnIndex="1" />
+            <TextField fx:id="passwordDB" GridPane.columnIndex="3" />
+            <TextField fx:id="nameDB" GridPane.columnIndex="5" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label layoutX="35.0" layoutY="305.0" text="User Report :">
+         <font>
+            <Font name="Segoe UI Light" size="24.0" />
+         </font>
+      </Label>
+      <GridPane hgap="27.0" layoutX="227.0" layoutY="308.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="64.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="241.0" text="Online" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="235.0" text="Registered" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="onlineUser" alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="236.0" text="0" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="registeredUser" alignment="CENTER" prefHeight="35.0" prefWidth="235.0" text="0" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Segoe UI Light" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="runServer" mnemonicParsing="false" prefHeight="29.0" prefWidth="147.0" text="Run Server" GridPane.columnIndex="5" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <ScrollPane layoutX="520.0" layoutY="376.0" prefHeight="372.0" prefWidth="1217.0" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="35.0">
+         <content>
+            <TextArea fx:id="log" prefHeight="370.0" prefWidth="1215.0">
+               <font>
+                  <Font name="Calibri Light" size="18.0" />
+               </font>
+            </TextArea>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
